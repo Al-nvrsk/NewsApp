@@ -1,11 +1,16 @@
-import { Suspense } from "react"
+import "./style/index.scss"
+import { Suspense, useContext, useState } from "react"
 import { Route, Routes, Link } from "react-router-dom"
 import { AboutPageAsync } from "./page/AboutPage/AboutPage.async"
 import { MainPageAsync } from "./page/MainPage/MainPage.asynx"
+import { Theme, ThemeContext } from "./theme/themeContext"
+import { useTheme } from "./theme/useTheme"
 
 export const App = () => {
+    const {theme, toggleTheme} = useTheme()
   return (
-    <div>
+    <div className = {`app ${theme}`}>
+        <button onClick = {toggleTheme}> TOGGLE </button>
         App
         <Link to = {'/'}> Main page </Link>
         <Link to = {'/about'}> About </Link>
