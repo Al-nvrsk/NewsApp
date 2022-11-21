@@ -1,5 +1,5 @@
-import React, { FC, JSXElementConstructor, ReactElement, useMemo, useState } from 'react'
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from './themeContext'
+import React, { useMemo, useState } from 'react'
+import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext'
 
 export const ThemeProvider = ({children}: any) => {
 

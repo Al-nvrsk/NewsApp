@@ -6,9 +6,10 @@ import { BuildEnv, BuildPath } from './config/build/types/config'
 export default (env: BuildEnv) => {
     
     const paths: BuildPath = {
-        entry: path.resolve(__dirname, 'src', 'index.tsx'),
+        entry: path.resolve(__dirname, 'src', 'app', 'index.tsx'),
         build: path.resolve(__dirname, 'build'),
-        html: path.resolve(__dirname, 'public', 'index.html')
+        html: path.resolve(__dirname, 'public', 'index.html'),
+        src: path.resolve(__dirname, 'src')
     }
     
     const mode = env.mode || 'development'
