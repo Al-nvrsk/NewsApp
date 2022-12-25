@@ -7,14 +7,15 @@ declare module '*.scss' {
 }
 
 declare module '*.svg' {
-    import React from 'react'
-    const SVG: React.VFC<React.SVGProps<SVGAElement>>
-    export default SVG
+    import React from 'react';
+
+    const SVG: React.VFC<React.SVGProps<SVGAElement>>;
+    export default SVG;
 }
 
-declare module "\*.png" {
+declare module '*.png' {
     const content: string;
     export default content;
   }
 
-  declare const __IS_DEV__:boolean
+declare const __IS_DEV__:boolean;
