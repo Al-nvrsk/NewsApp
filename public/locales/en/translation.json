@@ -2,7 +2,9 @@
   "Тестовый пример": "Test example",
   "Язык": "Русский",
   "toggle": "toggle",
-  "Loading...": "Loading..."
-
-  
+  "Loading...": "Loading...",
+  "Page not found": "Page not found",
+  "Unexpected error": "Unexpected error",
+  "Reload": "Reload",
+  "throw error": "throw error"
 }
