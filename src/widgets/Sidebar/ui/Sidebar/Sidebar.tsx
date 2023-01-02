@@ -16,7 +16,7 @@ interface SidebarProps {
 
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
-    const { t } = useTranslation('translation');
+    const { t } = useTranslation(['translation', 'about', 'main']);
 
     const onToggle = () => {
         setCollapsed((prev) => !prev);
@@ -46,7 +46,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 >
                     <MainIcon className={cls.icon} />
                     <span className={cls.link}>
-                        {t('Главная страница')}
+                        {t('Главная страница', { ns: 'main' })}
                     </span>
                 </AppLink>
                 <AppLink
