@@ -9,5 +9,7 @@
   "Reload": "Reload",
   "throw error": "throw error",
   "Sign In": "Sign In",
-  "Test text": "Test text"
+  "Test text": "Test text",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
