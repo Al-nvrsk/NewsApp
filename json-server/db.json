@@ -1,0 +1,16 @@
+{
+    "post":[
+        {"id":1, "title": "json-server"}
+    ],
+    "comments": [
+        {"id": 1, "body": "some comment"}
+    ],
+    "users": [
+        {
+        "id": 1,
+        "username": "admin",
+        "password": "123"
+        }
+    ],
+    "profile": {"name": "typicode"}
+}

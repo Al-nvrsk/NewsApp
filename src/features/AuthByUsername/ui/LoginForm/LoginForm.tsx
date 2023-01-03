@@ -1,0 +1,31 @@
+import { useTranslation } from 'react-i18next';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Button } from 'shared/ui/Button/Button';
+import { Input } from 'shared/ui/Input/Input';
+import cls from './LoginForm.module.scss';
+
+interface LoginFormProps {
+    className?: string
+}
+
+export const LoginForm = ({ className }: LoginFormProps) => {
+    const { t } = useTranslation();
+    return (
+        <div className={classNames(cls.LoginForm, {}, [className])}>
+            <Input
+                type="text"
+                autofocus
+                className={cls.input}
+                placeholder={t('Input Username')}
+            />
+            <Input
+                type="text"
+                className={cls.input}
+                placeholder={t('Input Password')}
+            />
+            <Button className={cls.loginbtn}>
+                {t('Войти')}
+            </Button>
+        </div>
+    );
+};

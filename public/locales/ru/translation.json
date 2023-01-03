@@ -11,6 +11,8 @@
     "Sign In": "Войти",
     "Test text": "Тестовый текст",
     "increment": "Увеличить",
-    "decrement": "Уменьшить"
+    "decrement": "Уменьшить",
+    "Input Username": "Введите имя",
+    "Input Password": "Введите пароль"
 
 }
