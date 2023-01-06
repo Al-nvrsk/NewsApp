@@ -16,5 +16,9 @@
   "Input Password": "Input Password",
   "Authorization form": "Authorization form",
   "Wrong login or password": "Wrong login or password",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "Profile": "Profile Page",
+  "Main": "Main page",
+  "About": "About",
+  "Profile Page": "Profile page"
 }
