@@ -2,13 +2,15 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import React, {
     InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
+import { DefaultTFuncReturn } from 'i18next';
 import cls from './Input.module.scss';
 
-type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
+type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'placeholder'>
 
 interface InputProps extends HTMLInputProps {
     className?: string;
     value?: string;
+    placeholder?: DefaultTFuncReturn;
     onChange?: (value: string) => void;
     autofocus?: boolean;
 }
