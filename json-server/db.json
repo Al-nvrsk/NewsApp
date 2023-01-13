@@ -1,25 +1,31 @@
 {
-    "post":[
-        {"id": "1", "title": "json-server"}
-    ],
-    "comments": [
-        {"id": "1", "body": "some comment"}
-    ],
-    "users": [
-        {
-        "id": "1",
-        "username": "admin",
-        "password": "123"
-        }
-    ],
-    "profile": {
-        "first": "User",
-        "lastname": "Master",
-        "age": 99,
-        "currency": "RUB",
-        "country": "Noth",
-        "city": "Mordor",
-        "username": "admin",
-        "avatar": "https://i.pinimg.com/originals/e9/14/da/e914da692e81844fd62bb3d552b053eb.jpg"
+  "post": [
+    {
+      "id": "1",
+      "title": "json-server"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "profile": {
+    "first": "User",
+    "lastname": "Master",
+    "age": 77,
+    "currency": "RUB",
+    "country": "Noth",
+    "city": "Mordor",
+    "username": "admin",
+    "avatar": "https://w7.pngwing.com/pngs/389/792/png-transparent-astronaut-avatar-circle-behavior-human-precalculus-mathematics-analytic-trigonometry-and-conic-sections.png"
+  }
 }

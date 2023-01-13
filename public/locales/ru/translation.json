@@ -20,5 +20,16 @@
   "Main": "Главная страница",
   "Profile": "Страница профиля",
   "About": "O сайте",
-  "Profile Page": "Страница профиля"
+  "Profile Page": "Страница профиля",
+  "An error occurred while loading": "Произошла ошибка при загрузке",
+  "Try refreshing the page": "Попробуйте обновить страницу",
+  "Cancel": "Отменить",
+  "Save": "Сохранить",
+  "Last name": "Фамилия",
+  "Age": "Возраст",
+  "City": "Город",
+  "Username": "Имя пользователя",
+  "First name": "Имя",
+  "Avatar": "Аватар",
+  "Currency": "Валюта"
 }
