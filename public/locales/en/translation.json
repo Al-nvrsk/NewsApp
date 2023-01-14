@@ -21,15 +21,18 @@
   "Main": "Main page",
   "About": "About",
   "Profile Page": "Profile page",
-  "An error occurred while loading": "An error occurred while loadingAn error occurred while loading",
+  "An error occurred while loading": "An error occurred while loading",
   "Try refreshing the page": "Try refreshing the page",
   "Cancel": "Cancel",
   "Save": "Save",
-  "Last name": "Lastname",
+  "Last name": "Last name",
   "Age": "Age",
   "City": "City",
   "Username": "Username",
   "Avatar": "Avatar",
   "First name": "First name",
-  "Currency": "Currency"
+  "Currency": "Currency",
+  "Edit": "Edit",
+  "User profile": "User profile",
+  "Country": "Country"
 }

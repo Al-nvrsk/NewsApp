@@ -31,5 +31,8 @@
   "Username": "Имя пользователя",
   "First name": "Имя",
   "Avatar": "Аватар",
-  "Currency": "Валюта"
+  "Currency": "Валюта",
+  "Edit": "Редактировать",
+  "User profile": "Профиль пользователя",
+  "Country": "Страна"
 }
