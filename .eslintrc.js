@@ -49,7 +49,7 @@ module.exports = {
             markupOnly: true,
         }],
         'max-len': ['error', {
-            code: 111,
+            code: 113,
             ignoreComments: true,
         }],
         'no-unused-vars': 'off',

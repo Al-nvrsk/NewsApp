@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "start": "npx webpack serve --env port=3000",
+    "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
     "start:dev:server": "node ./json-server/index.js",
     "build:prod": "npx webpack --env mode=production",
     "build:dev": "npx webpack --env mode=development",
@@ -29,6 +30,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.20.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.10",
     "@storybook/addon-actions": "6.5.15",
     "@storybook/addon-essentials": "6.5.15",
     "@storybook/addon-interactions": "6.5.15",
@@ -50,6 +52,7 @@
     "@typescript-eslint/eslint-plugin": "5.45.0",
     "@typescript-eslint/parser": "5.47.0",
     "babel-loader": "8.3.0",
+    "concurrently": "7.6.0",
     "css-loader": "6.7.2",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.4",
@@ -70,6 +73,8 @@
     "json-server": "0.17.1",
     "loki": "0.31.0",
     "mini-css-extract-plugin": "2.7.0",
+    "react-refresh": "0.14.0",
+    "react-refresh-typescript": "2.0.7",
     "reg-cli": "0.17.7",
     "sass": "1.56.1",
     "sass-loader": "13.2.0",

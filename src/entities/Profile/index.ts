@@ -10,4 +10,4 @@ export { updateProfileData } from './model/service/updateProfileData/updateProfi
 export { fetchProfileData } from './model/service/fetchProfileData/fetchProfileData';
 export { profileActions, profileReducer } from './model/slice/profileSlice';
 
-export { ProfileSchema, Profile, ValidateProfileError } from './model/types/profile';
+export { type ProfileSchema, type Profile, ValidateProfileError } from './model/types/profile';

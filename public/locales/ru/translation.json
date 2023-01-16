@@ -38,5 +38,6 @@
   "Server error": "Ошибка сервера",
   "Incorrect user age": "Некорректный возраст пользователя",
   "Incorrect user data": "Некорректная информация о пользователе",
-  "Data is empty": "Данные отсутствуют"
+  "Data is empty": "Данные отсутствуют",
+  "Articles": "Статьи"
 }

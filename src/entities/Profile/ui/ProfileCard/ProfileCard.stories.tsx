@@ -3,7 +3,7 @@ import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 import { ProfileCard } from './ProfileCard';
 
-const avatar = require('shared/assets/tests/avatar.jpg');
+const avatar = require('./avatar.test.jpg');
 
 export default {
     title: 'entities/ProfileCard',
