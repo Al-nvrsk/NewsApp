@@ -58,7 +58,7 @@
       "views": "1",
       "createdAt": "17.01.2023",
       "type": ["IT"],
-      "blocks":[
+      "block":[
         {
           "id": "1",
           "type": "TEXT",

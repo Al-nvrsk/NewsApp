@@ -10,7 +10,6 @@ module.exports = {
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
     ],
-    overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
@@ -45,6 +44,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'no-undef': 'off',
+        'consistent-return': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
         }],
@@ -63,4 +63,13 @@ module.exports = {
         __API__: true,
         __PROJECT__: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+                'max-len': 'off',
+            },
+        },
+    ],
 };
