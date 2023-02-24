@@ -2,7 +2,13 @@
   "post": [
     {
       "id": "1",
-      "title": "json-server"
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
     }
   ],
   "comments": [
@@ -23,6 +29,24 @@
       "text": "third some comment",
       "articleId": "1",
       "userId": "2"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "4Cljjzl"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "fddgdfg",
+      "id": "Mur_sZ3"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dfdgfdgfdg",
+      "id": "-k0zYUH"
     }
   ],
   "users": [
@@ -41,16 +65,30 @@
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     }
   ],
-  "profile": {
-    "first": "User",
-    "lastname": "Master",
-    "age": 77,
-    "currency": "USD",
-    "country": "BBelarus",
-    "city": "Mordor",
-    "username": "admin",
-    "avatar": "https://w7.pngwing.com/pngs/389/792/png-transparent-astronaut-avatar-circle-behavior-human-precalculus-mathematics-analytic-trigonometry-and-conic-sections.png"
-  },
+  "profile": [
+    {
+      "id": "1",
+      "first": "FirstUser",
+      "lastname": "Master",
+      "age": 77,
+      "currency": "USD",
+      "country": "Belarus",
+      "city": "Mordor",
+      "username": "admin",
+      "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
+    },
+    {
+      "id": "2",
+      "first": "SecondUser",
+      "lastname": "Baggins",
+      "age": 77,
+      "currency": "USD",
+      "country": "Belarus",
+      "city": "Shire",
+      "username": "Frodo",
+      "avatar": "https://w7.pngwing.com/pngs/389/792/png-transparent-astronaut-avatar-circle-behavior-human-precalculus-mathematics-analytic-trigonometry-and-conic-sections.png"
+    }
+  ],
   "articles": [
     {
       "id": "1",
@@ -59,8 +97,10 @@
       "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
       "views": "1",
       "createdAt": "17.01.2023",
-      "type": ["IT"],
-      "block":[
+      "type": [
+        "IT"
+      ],
+      "block": [
         {
           "id": "1",
           "type": "TEXT",
