@@ -2,7 +2,7 @@ import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { fetchNextArticlesPage } from './fetchNextArticlesPage';
 import { fetchArticlesPageList } from '../fetchArticlesPage/fetchArticlesPage';
 
-jest.mock('../fetchArticlesList/fetchArticlesList');
+jest.mock('../fetchArticlesPage/fetchArticlesPage');
 
 describe('fetchNextArticlesPage.test', () => {
     test('success', async () => {
