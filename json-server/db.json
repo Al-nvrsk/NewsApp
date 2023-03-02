@@ -150,11 +150,11 @@
     },
     {
       "id": "2",
-      "title": "Javascript news",
+      "title": "news",
       "subtitle": "What's new",
       "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
-      "views": "1",
-      "createdAt": "17.01.2023",
+      "views": "5",
+      "createdAt": "25.01.2023",
       "userId": "1",
       "type": [
         "IT"
@@ -208,14 +208,14 @@
     },
     {
       "id": "3",
-      "title": "Javascript news",
+      "title": "Something",
       "subtitle": "What's new",
       "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
-      "views": "1",
-      "createdAt": "17.01.2023",
+      "views": "10",
+      "createdAt": "17.02.2023",
       "userId": "1",
       "type": [
-        "IT"
+        "ECONOMICS"
       ],
       "block": [
         {
@@ -266,14 +266,14 @@
     },
     {
       "id": "4",
-      "title": "Javascript news",
+      "title": "Rust news",
       "subtitle": "What's new",
       "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
-      "views": "1",
-      "createdAt": "17.01.2023",
+      "views": "100",
+      "createdAt": "28.02.2023",
       "userId": "1",
       "type": [
-        "IT"
+        "SCIENCE"
       ],
       "block": [
         {
