@@ -39,5 +39,8 @@
   "Incorrect user age": "Некорректный возраст пользователя",
   "Incorrect user data": "Некорректная информация о пользователе",
   "Data is empty": "Данные отсутствуют",
-  "Articles": "Статьи"
+  "Articles": "Статьи",
+  "News App": "News App",
+  "Create new Article": "Создание новой статьи"
+
 }

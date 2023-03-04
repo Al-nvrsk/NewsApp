@@ -23,7 +23,7 @@ export interface StateSchema {
     articleDetails?: ArticleDetailsSchema;
     addCommentForm?: AddCommentFormSchema;
     articlesPage?: ArticlesPageSchema;
-    articleDetailsPage: ArticleDetailsPageSchema;
+    articleDetailsPage?: ArticleDetailsPageSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
