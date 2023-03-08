@@ -72,7 +72,7 @@
       "lastname": "Master",
       "age": 77,
       "currency": "USD",
-      "country": "Belarus",
+      "country": "Kazahstan",
       "city": "Mordor",
       "username": "admin",
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
@@ -437,7 +437,8 @@
           ]
         }
       ]
-    },{
+    },
+    {
       "id": "7",
       "title": "Javascript news",
       "subtitle": "What's new",
