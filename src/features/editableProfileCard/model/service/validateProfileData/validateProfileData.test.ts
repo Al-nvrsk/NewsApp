@@ -1,6 +1,6 @@
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
-import { ValidateProfileError } from '../../types/profile';
+import { ValidateProfileError } from '../../types/editableProfileCardSchema';
 import { validateProfileData } from './validateProfileData';
 
 const data = {
@@ -19,7 +19,11 @@ describe('validateProfileData.test', () => {
         expect(result).toEqual([]);
     });
     test('should return with error from empty first and last name', () => {
-        const result = validateProfileData({ ...data, first: '', lastname: '' });
+        const result = validateProfileData({
+            ...data,
+            first: '',
+            lastname: '',
+        });
         expect(result).toEqual([ValidateProfileError.INCORRECT_USER_DATA]);
     });
     test('should return with error from incorrect age', () => {
@@ -28,6 +32,9 @@ describe('validateProfileData.test', () => {
     });
     test('should return with all errors', () => {
         const result = validateProfileData({});
-        expect(result).toEqual([ValidateProfileError.INCORRECT_USER_DATA, ValidateProfileError.INCORRECT_AGE]);
+        expect(result).toEqual([
+            ValidateProfileError.INCORRECT_USER_DATA,
+            ValidateProfileError.INCORRECT_AGE,
+        ]);
     });
 });
