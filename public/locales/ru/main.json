@@ -3,5 +3,8 @@
   "No comments": "Комментарии отсутствуют",
   "Input comment text": "Введите текст комментария",
   "Send": "Отправить",
-  "Error from loading": "Ошибка при загрузке"
+  "Error from loading": "Ошибка при загрузке",
+  "Admin Panel": "Панель админимистратора",
+  "Access forbidden": "Доступ запрещен",
+  "Admin panel": "Admin panel"
 }
