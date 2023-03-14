@@ -1,3 +1,4 @@
+export { UserRole } from './model/consts/userConsts';
 export { getUserRoles } from './model/selectors/roleSelector/roleSelector';
 export { isUserAdmin, isUserManager } from './model/selectors/roleSelector/roleSelector';
 export { getUserInited } from './model/selectors/getUserInited/getUserInited';
