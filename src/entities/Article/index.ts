@@ -1,3 +1,4 @@
+export { ArticleBlockType } from './model/consts/articleConsts';
 export { getArticleDetailData } from './model/selectors/articleDetailsSelectors';
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelector';

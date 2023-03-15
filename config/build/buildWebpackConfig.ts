@@ -18,6 +18,9 @@ export function buildWebpackConfig(option: BuildOptions): Configuration {
             publicPath: '/',
         },
         plugins: buildPlugins(option),
+        watchOptions: {
+            ignored: /node_modules/,
+        },
         module: {
             rules: buildLoaders(option),
         },
