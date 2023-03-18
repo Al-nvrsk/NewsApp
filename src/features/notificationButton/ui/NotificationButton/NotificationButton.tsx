@@ -1,11 +1,11 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { memo, useCallback, useState } from 'react';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import { Icon } from 'shared/ui/Icon/Icon';
-import { Popover } from 'shared/ui/Popups';
-import { NotificationList } from 'entities/Notification';
-import NotificationIcon from 'shared/assets/icons/notification.svg';
-import { Drawer } from 'shared/ui/Drawer/Drawer';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
+import { Icon } from '@/shared/ui/Icon/Icon';
+import { Popover } from '@/shared/ui/Popups';
+import { NotificationList } from '@/entities/Notification';
+import NotificationIcon from '@/shared/assets/icons/notification.svg';
+import { Drawer } from '@/shared/ui/Drawer/Drawer';
 import cls from './NotificationButton.module.scss';
 
 interface NotificationButtonProps {

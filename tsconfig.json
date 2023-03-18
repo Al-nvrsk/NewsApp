@@ -14,7 +14,7 @@
         "baseUrl": ".",
         "isolatedModules": true,
         "paths": {
-            "*": ["./src/*"]
+            "@/*": ["./src/*"]
         }
     },
     "ts-node": {
