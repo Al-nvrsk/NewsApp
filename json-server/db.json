@@ -772,5 +772,51 @@
         }
       ]
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Goog article",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Goog article",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 3,
+      "feedback": "awesome",
+      "id": "HvCeyN-"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 3,
+      "feedback": "",
+      "id": "Xgx1gCA"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Nice profile",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Goog profile",
+      "userId": "1",
+      "profileId": "2"
+    }
   ]
 }
