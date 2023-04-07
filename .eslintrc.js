@@ -21,8 +21,10 @@ module.exports = {
         'i18next',
         'react-hooks',
         'forapp-plugin',
+        'unused-imports',
     ],
     rules: {
+        'unused-imports/no-unused-imports': 'error',
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
@@ -58,7 +60,21 @@ module.exports = {
             'warn',
             { argsIgnorePattern: '^_' },
         ],
-        'forapp-plugin/path-checker': 'error',
+        'forapp-plugin/path-checker': ['error', { alias: '@' }],
+        'forapp-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
+        'forapp-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,

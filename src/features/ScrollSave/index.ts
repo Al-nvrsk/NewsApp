@@ -1,3 +1,5 @@
+export { getScrollByPath } from './model/selectors/getScroll';
+
 export { scrollSaveReducer, scrollSaveActions } from './model/slice/scrollSaveSlice';
 
 export { getScroll } from './model/selectors/getScroll';

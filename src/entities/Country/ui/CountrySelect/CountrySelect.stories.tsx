@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import '@/app/style/index.scss';
 import { CountrySelect } from './CountrySelect';
 
 export default {
