@@ -11,7 +11,7 @@ interface AdminPanelPageProps {
 const AdminPanelPage = memo(({ className }: AdminPanelPageProps) => {
     const { t } = useTranslation('main');
     return (
-        <Page className={classNames(cls.AdminPanelPage, {}, [className])}>
+        <Page data-testid="AdminPanelPage" className={classNames(cls.AdminPanelPage, {}, [className])}>
             {t('Admin panel')}
         </Page>
     );

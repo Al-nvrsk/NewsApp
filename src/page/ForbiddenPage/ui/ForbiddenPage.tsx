@@ -11,7 +11,7 @@ interface ForbiddenPageProps {
 const ForbiddenPage = memo(({ className }: ForbiddenPageProps) => {
     const { t } = useTranslation('main');
     return (
-        <Page className={classNames(cls.ForbiddenPage, {}, [className])}>
+        <Page data-testid="ForbiddenPage" className={classNames(cls.ForbiddenPage, {}, [className])}>
             {t('Access forbidden')}
         </Page>
     );
