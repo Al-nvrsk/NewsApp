@@ -107,6 +107,15 @@
         "USER"
       ],
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
+    },
+    {
+      "id": "3",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     }
   ],
   "profile": [
