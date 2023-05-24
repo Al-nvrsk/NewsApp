@@ -140,6 +140,17 @@
       "city": "Shire",
       "username": "Frodo",
       "avatar": "https://w7.pngwing.com/pngs/389/792/png-transparent-astronaut-avatar-circle-behavior-human-precalculus-mathematics-analytic-trigonometry-and-conic-sections.png"
+    },
+    {
+      "id": "3",
+      "first": "test",
+      "lastname": "Baggins",
+      "age": 77,
+      "currency": "USD",
+      "country": "Belarus",
+      "city": "Shire",
+      "username": "testuser",
+      "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     }
   ],
   "articles": [
@@ -780,6 +791,188 @@
           ]
         }
       ]
+    },
+    [
+      {
+        "id": "1",
+        "title": "Javascript news",
+        "subtitle": "What's new",
+        "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+        "views": "1",
+        "createdAt": "17.01.2023",
+        "userId": "1",
+        "type": [
+          "IT"
+        ],
+        "block": [
+          {
+            "id": "1",
+            "type": "TEXT",
+            "title": "Заголовок этого блока",
+            "paragraphs": [
+              "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+              "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+              "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            ]
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "id": "1",
+        "title": "Javascript news",
+        "subtitle": "What's new",
+        "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+        "views": "1",
+        "createdAt": "17.01.2023",
+        "userId": "1",
+        "type": [
+          "IT"
+        ],
+        "block": [
+          {
+            "id": "1",
+            "type": "TEXT",
+            "title": "Заголовок этого блока",
+            "paragraphs": [
+              "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+              "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+              "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            ]
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "id": "1",
+        "title": "Javascript news",
+        "subtitle": "What's new",
+        "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+        "views": "1",
+        "createdAt": "17.01.2023",
+        "userId": "1",
+        "type": [
+          "IT"
+        ],
+        "block": [
+          {
+            "id": "1",
+            "type": "TEXT",
+            "title": "Заголовок этого блока",
+            "paragraphs": [
+              "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+              "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+              "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            ]
+          }
+        ]
+      }
+    ],
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "3mnGxzI"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "450AopU"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "VUHBBlb"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "focPFq9"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "KHHcMTt"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "Z3v7Yfl"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "kYI0wx7"
+    },
+    {
+      "title": "Javascript news",
+      "subtitle": "What's new",
+      "img": "https://cdn1.iconfinder.com/data/icons/application-file-formats/128/javascript-512.png",
+      "views": "1",
+      "createdAt": "17.01.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "block": [],
+      "id": "DAzj11T"
     }
   ],
   "article-ratings": [
