@@ -1,0 +1,11 @@
+{
+    "id": "1",
+    "first": "test",
+    "lastname": "Baggins",
+    "age": 77,
+    "currency": "USD",
+    "country": "Belarus",
+    "city": "Shire",
+    "username": "testuser",
+    "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
+}
