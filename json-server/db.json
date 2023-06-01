@@ -97,6 +97,10 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://w7.pngwing.com/pngs/389/792/png-transparent-astronaut-avatar-circle-behavior-human-precalculus-mathematics-analytic-trigonometry-and-conic-sections.png"
     },
     {
@@ -106,6 +110,10 @@
       "roles": [
         "USER"
       ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     },
     {
@@ -115,6 +123,10 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     }
   ],

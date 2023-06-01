@@ -1,25 +1,25 @@
-import { EditableProfileCard } from '@/features/editableProfileCard'
-import { TestProvider } from '@/shared/lib/tests/componentRender/ComponentRender'
+import { EditableProfileCard } from '@/features/editableProfileCard';
+import { TestProvider } from '@/shared/lib/tests/componentRender/ComponentRender';
 
-const USER_ID = '1'
+const USER_ID = '1';
 
 describe('EditableProfileCard.cy.tsx', () => {
     it('playground', () => {
-        cy.intercept('GET', '**/profile/*', {fixture: 'profile.json'})
+        cy.intercept('GET', '**/profile/*', { fixture: 'profile.json' });
         cy.mount(
             <TestProvider
-                options={{ 
+                options={{
                     initialState: {
                         user: {
                             authData: {
-                                id: USER_ID
-                            }
-                        }
-                    }
+                                id: USER_ID,
+                            },
+                        },
+                    },
                 }}
             >
-                < EditableProfileCard id={USER_ID} />
-            </TestProvider>
-        )
-    })
-})
+                <EditableProfileCard id={USER_ID} />
+            </TestProvider>,
+        );
+    });
+});
