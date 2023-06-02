@@ -76,6 +76,7 @@ module.exports = {
                 ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
             },
         ],
+        'react/no-unstable-nested-components': 'warn',
     },
     globals: {
         __IS_DEV__: true,

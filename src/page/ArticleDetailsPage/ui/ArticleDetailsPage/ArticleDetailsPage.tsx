@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ArticleDetails } from '@/entities/Article';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
@@ -14,7 +15,8 @@ import { articleDetailsPageReducer } from '../../model/slice';
 import { ArticleDetailsPageHeader } from '../ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { ArticleDetailsComments } from '../ArticleDetailsComments/ArticleDetailsComments';
 import { ArticleRating } from '@/features/articleRating';
-import { getFeatureFlags } from '@/shared/lib/features';
+import { toggleFeatures } from '@/shared/lib/features';
+import { Card } from '@/shared/ui/Card';
 
 interface ArticleDetailsPageProps {
     className?: string
@@ -25,12 +27,24 @@ const reducers: ReducerList = {
 };
 
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
+    const { t } = useTranslation();
     const { id } = useParams<{id: string}>();
-    const isArticleRatingEnabled = getFeatureFlags('isArticleRatingEnabled');
 
     if (!id) {
         return null;
     }
+
+    const articleRatingCard = toggleFeatures({
+        name: 'isArticleRatingEnabled',
+        on: () => <ArticleRating articleId={id} />,
+        off: () => (
+            <Card>
+                {' '}
+                {t('Article rating will be added soon')}
+                {' '}
+            </Card>
+        ),
+    });
 
     return (
         <DynamicModuleLoader reducer={reducers}>
@@ -38,7 +52,7 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
                 <VStack gap="16" max>
                     <ArticleDetailsPageHeader />
                     <ArticleDetails id={id!} />
-                    { isArticleRatingEnabled && <ArticleRating articleId={id} /> }
+                    { articleRatingCard }
                     <ArticleRecommendationsList />
                     <ArticleDetailsComments id={id!} />
                 </VStack>
