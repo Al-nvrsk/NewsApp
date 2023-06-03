@@ -101,6 +101,11 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
       },
+      "jsonSettings": {
+        "theme": "app_orange_theme",
+        "isFirstVisit": true,
+        "settingPageHasBeenOpen": false
+      },
       "avatar": "https://w7.pngwing.com/pngs/389/792/png-transparent-astronaut-avatar-circle-behavior-human-precalculus-mathematics-analytic-trigonometry-and-conic-sections.png"
     },
     {
@@ -114,6 +119,11 @@
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
       },
+      "jsonSettings": {
+        "theme": "app_orange_theme",
+        "isFirstVisit": true,
+        "settingPageHasBeenOpen": false
+      },
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     },
     {
@@ -126,6 +136,11 @@
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingPageHasBeenOpen": false
       },
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
     }
