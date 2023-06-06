@@ -4,14 +4,11 @@ import { useSelector } from 'react-redux';
 import { LoginModal } from '@/features/AuthByUsername';
 import { getUserAuthData } from '@/entities/User';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
-import { HStack } from '@/shared/ui/Stack';
-import { Text, TextTheme } from '@/shared/ui/Text';
-import { NotificationButton } from '@/features/notificationButton';
-import { AvatarDropdown } from '@/features/avatarDropdown';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import cls from './Navbar.module.scss';
-import { getRouteArticleCreate } from '@/shared/const/router';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { NavbarVersion01 } from './version/01/NavbarVersion01';
+import { NavbarVersion02 } from './version/02/NavbarVersion02';
 
 interface NavbarProps {
     className?: string
@@ -31,20 +28,24 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 
     if (authData) {
         return (
-            <header className={classNames(cls.Navbar, {}, [className])}>
-                <Text className={cls.appName} title={t('News App')} theme={TextTheme.INVERTED} />
-                <AppLink
-                    to={getRouteArticleCreate()}
-                    theme={AppLinkTheme.SECONDARY}
-                >
-                    {t('Create new Article')}
-                </AppLink>
-                <HStack gap="16" className={cls.actions}>
-                    <NotificationButton />
-                    <AvatarDropdown />
-                </HStack>
-                <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
-            </header>
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={(
+                    <NavbarVersion02
+                        className={cls.Navbar}
+                        isAuthModal={isAuthModal}
+                        onCloseModal={onCloseModal}
+                    />
+                )}
+                off={(
+                    <NavbarVersion01
+                        className={cls.Navbar}
+                        isAuthModal={isAuthModal}
+                        onCloseModal={onCloseModal}
+                    />
+                )}
+            />
+
         );
     }
 

@@ -3,7 +3,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import ListIcon from '@/shared/assets/icons/list.svg';
 import TiledIcon from '@/shared/assets/icons/tiled.svg';
 import { Icon } from '@/shared/ui/Icon';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import cls from './ArticleViewSelector.module.scss';
 import { ArticleView } from '../../../../entities/Article/model/consts/articleConsts';
 
@@ -40,6 +40,8 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
                 >
                     <Icon
                         Svg={viewType.icon}
+                        width={24}
+                        height={24}
                         className={classNames('', { [cls.notSelected]: viewType.view !== view })}
                     />
                 </Button>
