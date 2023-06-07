@@ -10,9 +10,9 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
-import EyeIcon from '@/shared/assets/icons/eye.svg';
-import CalendarIcon from '@/shared/assets/icons/calendar.svg';
-import { Icon } from '@/shared/ui/Icon';
+import EyeIcon from '@/shared/assets/icons/deprecated/eye.svg';
+import CalendarIcon from '@/shared/assets/icons/deprecated/calendar.svg';
+import { Icon } from '@/shared/ui/deprecated/Icon';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { ArticleBlock } from '../../model/types/article';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';

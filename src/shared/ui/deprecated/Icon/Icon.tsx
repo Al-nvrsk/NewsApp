@@ -7,7 +7,9 @@ interface iconProps extends React.SVGProps<SVGSVGElement> {
     Svg: VFC<SVGProps<SVGSVGElement>>
     inverted?: boolean
 }
-
+/**
+ * @deprecated
+ */
 export const Icon = memo((props: iconProps) => {
     const {
         className,

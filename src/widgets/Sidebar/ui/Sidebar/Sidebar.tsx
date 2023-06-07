@@ -20,7 +20,14 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={<SidebarVersion02 />}
+            on={(
+                <SidebarVersion02
+                    collapsed={collapsed}
+                    onToggle={onToggle}
+                    SidebarItemList={SidebarItemList}
+                    className={className}
+                />
+            )}
             off={(
                 <SidebarVersion01
                     collapsed={collapsed}
