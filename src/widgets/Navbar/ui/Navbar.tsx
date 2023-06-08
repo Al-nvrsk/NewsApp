@@ -32,7 +32,6 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                 feature="isAppRedesigned"
                 on={(
                     <NavbarVersion02
-                        className={cls.Navbar}
                         isAuthModal={isAuthModal}
                         onCloseModal={onCloseModal}
                     />

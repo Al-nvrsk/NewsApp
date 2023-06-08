@@ -5,8 +5,8 @@ import { DropdownDirection } from '@/shared/types/ui';
 import cls from './ListBox.module.scss';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
-import { HStack } from '../../../Stack';
-import { Button } from '../../../deprecated/Button';
+import { HStack } from '../../../../Stack';
+import { Button } from '../../../Button';
 
 export interface ListBoxItem {
     value: string
@@ -24,6 +24,9 @@ interface ListBoxProps {
     label?: string | null
 }
 
+/**
+ * @deprecated
+ */
 export const ListBox = (props: ListBoxProps) => {
     const {
         items,

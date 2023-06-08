@@ -5,7 +5,7 @@ import { DropdownDirection } from '@/shared/types/ui';
 import { mapDirectionClass } from '../../styles/consts';
 import cls from './Dropdown.module.scss';
 import popupCls from '../../styles/popup.module.scss';
-import { AppLink } from '../../../deprecated/AppLink';
+import { AppLink } from '../../../AppLink';
 
 export interface DropdownItem {
     disabled?: boolean;
@@ -29,7 +29,7 @@ export function Dropdown(props: DropdownProps) {
         direction = 'bottom right',
     } = props;
 
-    const menuClasses = [mapDirectionClass[direction]];
+    const menuClasses = [mapDirectionClass[direction], popupCls.menu];
 
     return (
         <Menu

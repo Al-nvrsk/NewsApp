@@ -14,7 +14,7 @@ import { ArticleBlockType, ArticleView } from '../../model/consts/articleConsts'
 import { AppLink } from '@/shared/ui/deprecated/AppLink';
 import { getRouteArticleDetails } from '@/shared/const/router';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
-import { AppImage } from '@/shared/ui/deprecated/AppImage/AppImage';
+import { AppImage } from '@/shared/ui/AppImage/AppImage';
 
 interface ArticleListItemProps {
     className?: string
