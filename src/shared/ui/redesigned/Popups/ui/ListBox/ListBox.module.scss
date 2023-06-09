@@ -16,5 +16,8 @@
 
 .item {
     padding: 10px 20px;
-    border-radius: 12px;
+}
+
+.selected {
+    background: var(--light-bg-redesigned);
 }
