@@ -1,16 +1,17 @@
 import { useTranslation } from 'react-i18next';
-import { CountrySelect, Currency, CurrencySelect } from '@/entities/Currency';
+import { Currency } from '@/entities/Currency';
 import { Country } from '@/entities/Country';
-import { classNames, Mods } from '@/shared/lib/classNames/classNames';
-import { Avatar } from '@/shared/ui/deprecated/Avatar';
-import { Input } from '@/shared/ui/deprecated/Input';
-import { Loader } from '@/shared/ui/deprecated/Loader';
-import { Text, TextAlign, TextTheme } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/Stack';
 import { Profile } from '../../model/types/profile';
-import cls from './ProfileCard.module.scss';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { ProfileCardSkeleton } from './version/02/ProfileCardSkeleton/ProfileCardSkeleton';
+import { ProfileCard as ProfileCardRedesigned } from './version/02/ProfileCard/ProfileCard';
+import { ProfileCard as ProfileCardDeprecated } from './version/01/ProfileCard/ProfileCard';
+import { ProfileCardLoader as ProfileCardLoaderDeprecated }
+    from './version/01/ProfileCardLoader/ProfileCardLoader';
+import { ProfileCardError as ProfileCardErrorDeprecated } from './version/01/ProfileCardError/ProfileCardError';
+import { ProfileCardError } from './version/02/ProfileCardError/ProfielCardError';
 
-interface ProfileCardProps {
+export interface ProfileCardProps {
     className?: string
     data?: Profile
     error?: string
@@ -29,110 +30,37 @@ interface ProfileCardProps {
 
 export const ProfileCard = (props: ProfileCardProps) => {
     const {
-        className,
-        data,
         error,
         isLoading,
-        onChangeFirstname,
-        onChangeLastname,
-        onChangeAge,
-        onChangeCity,
-        onChangeUsername,
-        onChangeAvatar,
-        readonly,
-        onChangeCurrency,
-        onChangeCountry,
+        ...otherProps
     } = props;
     const { t } = useTranslation();
 
     if (isLoading) {
         return (
-            <HStack className={classNames(cls.ProfileCard, { [cls.loadiing]: true }, [className])}>
-                <Loader />
-            </HStack>
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={<ProfileCardSkeleton />}
+                off={<ProfileCardLoaderDeprecated />}
+            />
         );
     }
 
     if (error) {
         return (
-            <HStack justify="center" max className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
-                <Text
-                    theme={TextTheme.ERROR}
-                    title={t('An error occurred while loading')}
-                    text={t('Try refreshing the page')}
-                    align={TextAlign.CENTER}
-                />
-            </HStack>
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={<ProfileCardError />}
+                off={<ProfileCardErrorDeprecated />}
+            />
         );
     }
 
-    const mods: Mods = {
-        [cls.editing]: !readonly,
-    };
-
     return (
-        <VStack gap="8" max className={classNames(cls.ProfileCard, mods, [className])}>
-            {data?.avatar && (
-                <HStack justify="center" className={cls.avatarWrapper}>
-                    <Avatar src={data?.avatar} alt="avatar" size={100} />
-                </HStack>
-            )}
-            <Input
-                value={data?.first}
-                className={cls.input}
-                placeholder={t('First name')}
-                onChange={onChangeFirstname}
-                readonly={readonly}
-                data-testid="ProfileCard.firstname"
-            />
-            <Input
-                value={data?.lastname}
-                className={cls.input}
-                placeholder={t('Last name')}
-                onChange={onChangeLastname}
-                readonly={readonly}
-                data-testid="ProfileCard.lastname"
-            />
-            <Input
-                value={data?.age}
-                className={cls.input}
-                placeholder={t('Age')}
-                onChange={onChangeAge}
-                readonly={readonly}
-            />
-            <Input
-                value={data?.city}
-                className={cls.input}
-                placeholder={t('City')}
-                onChange={onChangeCity}
-                readonly={readonly}
-            />
-            <Input
-                value={data?.username}
-                className={cls.input}
-                placeholder={t('Username')}
-                onChange={onChangeUsername}
-                readonly={readonly}
-            />
-            <Input
-                value={data?.avatar}
-                className={cls.input}
-                placeholder={t('Avatar')}
-                onChange={onChangeAvatar}
-                readonly={readonly}
-            />
-            <CurrencySelect
-                className={cls.input}
-                value={data?.currency}
-                onChange={onChangeCurrency}
-                readonly={readonly}
-            />
-            <CountrySelect
-                className={cls.input}
-                value={data?.country}
-                onChange={onChangeCountry}
-                readonly={readonly}
-            />
-        </VStack>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={<ProfileCardRedesigned {...otherProps} />}
+            off={<ProfileCardDeprecated {...otherProps} />}
+        />
     );
 };

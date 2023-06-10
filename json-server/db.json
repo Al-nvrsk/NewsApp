@@ -103,7 +103,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingPageHasBeenOpen": false
       },
@@ -152,8 +152,8 @@
       "first": "FirstUser",
       "lastname": "Master",
       "age": 77,
-      "currency": "USD",
-      "country": "Kazahstan",
+      "currency": "GEL",
+      "country": "Belarus",
       "city": "Mordor",
       "username": "admin",
       "avatar": "https://s.cdpn.io/profiles/user/1817269/512.jpg?1520540197"
