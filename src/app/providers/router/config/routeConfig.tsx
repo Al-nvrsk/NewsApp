@@ -8,6 +8,7 @@ import { ForbiddenPage } from '@/page/ForbiddenPage';
 import { MainPage } from '@/page/MainPage';
 import { NotFoundPage } from '@/page/NotFoundPage';
 import { ProfilePage } from '@/page/ProfilePage';
+import { SettingsPage } from '@/page/SettingsPage';
 import {
     AppRoutes,
     getRouteAbout,
@@ -19,6 +20,7 @@ import {
     getRouteForbidden,
     getRouteMain,
     getRouteProfile,
+    getRouteSettings,
 } from '@/shared/const/router';
 import { AppRouterProps } from '@/shared/types/router';
 
@@ -26,6 +28,10 @@ export const routeConfig: Record<AppRoutes, AppRouterProps> = {
     [AppRoutes.MAIN]: {
         path: getRouteMain(),
         element: <MainPage />,
+    },
+    [AppRoutes.SETTINGS]: {
+        path: getRouteSettings(),
+        element: <SettingsPage />,
     },
     [AppRoutes.ABOUT]: {
         path: getRouteAbout(),
