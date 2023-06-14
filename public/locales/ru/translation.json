@@ -50,5 +50,12 @@
   "Settings": "Настройки",
   "New": "Новый",
   "Old": "Старый",
-  "Interface option": "Вариант интерфейса"
+  "Interface option": "Вариант интерфейса",
+  "Views": "Просмотры",
+  "view_one": "{{count}} просмотр",
+  "view_few": "{{count}} просмотрa",
+  "view_many": "{{count}} просмотров"
+
+
+
 }

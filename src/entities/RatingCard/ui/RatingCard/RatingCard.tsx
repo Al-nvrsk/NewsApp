@@ -7,10 +7,10 @@ import { Card } from '@/shared/ui/deprecated/Card';
 import { Text } from '@/shared/ui/deprecated/Text';
 import { StarRating } from '@/shared/ui/deprecated/StarRating';
 import { Input } from '@/shared/ui/deprecated/Input';
-import { Modal } from '@/shared/ui/deprecated/Modal';
+import { Modal } from '@/shared/ui/Modal';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { isMobile } from '@/shared/lib/components/isMobile/isMobile';
-import { Drawer } from '@/shared/ui/deprecated/Drawer';
+import { Drawer } from '@/shared/ui/Drawer';
 
 interface RatingCardProps {
     className?: string

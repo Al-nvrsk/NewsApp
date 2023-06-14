@@ -51,5 +51,8 @@
   "Settings": "Settings",
   "New": "New",
   "Old": "Old",
-  "Interface option": "Interface option"
+  "Interface option": "Interface option",
+  "Views": "Views",
+  "view_one": "{{count}} view",
+  "view_other": "{{count}} views"
 }
