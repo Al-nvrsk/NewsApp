@@ -10,8 +10,9 @@ import { ToggleFeatures } from '@/shared/lib/features';
 import { AppLoaderLayout, MainLayout } from '@/shared/layouts';
 import { PageLoader } from '@/widgets/PageLoader';
 import { useAppToolbar } from './lib/useAppToolbar';
+import { withTheme } from './providers/ThemeProvider/ui/withTheme';
 
-export function App() {
+function App() {
     const dispatch = useAppDispatch();
     const inited = useSelector(getUserInited);
     const toolbar = useAppToolbar();
@@ -65,3 +66,5 @@ export function App() {
         />
     );
 }
+
+export default withTheme(App);

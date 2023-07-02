@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Avatar } from './Avatar';
 
-const AvatarImg = require('../../assets/tests/avatar.jpg');
+const AvatarImg = require('../../../assets/tests/avatar.jpg');
 
 export default {
     title: 'shared/Avatar',
